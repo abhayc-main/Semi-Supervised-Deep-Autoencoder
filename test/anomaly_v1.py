@@ -67,13 +67,13 @@ def build_model(input_shape, num_classes):
         tf.keras.layers.MaxPooling2D((2, 2)),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(64, activation='relu'),
-        tf.keras.layers.Dense(num_classes, activation='softmax')
+        tf.keras.layers.Dense(num_classes, activation='sigmoid')
     ])
     return model
 
 
 def train_model(model, train_data, train_labels):
-    # Train model
+    # Train model 
     model.compile(optimizer='adam',
                   loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     model.fit(train_data, train_labels, epochs=10, batch_size=128, verbose=1)
@@ -91,6 +91,7 @@ def majority_voting(labels1, labels2):
     # Combine labels using majority voting
     combined_labels = np.where((labels1 + labels2) > 1, 1, 0)
     return combined_labels
+
 
 
 # Split data into train and test sets
