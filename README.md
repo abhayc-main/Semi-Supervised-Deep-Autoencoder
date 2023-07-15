@@ -2,10 +2,12 @@
 Design and Implementation of a Robust Machine Learning Architecture for Anomaly Detection and Classification
 
 What is it and how are we doing it?
-What is it - what situations does it solve - Main Goals*
-Malware in network traffic or in executable files. The model should be able to accurately classify malware and benign software
-Intrusion Detection: Develop a machine learning model that can detect network intrusions in real-time. The model should be able to classify network traffic as normal or malicious. Network Traffic Analysis: Develop a machine learning model that can analyze network traffic to identify potential security threats. The model should be able to identify patterns and anomalies in the network traffic. 
-Phishing Detection: Develop a machine learning model that can detect phishing emails. The model should be able to identify emails that are likely to be phishing attempts.
+What is it - what situations does it solve - 
+#### Main Goals
+- Malware in network traffic or in executable files. The model should be able to accurately classify malware and benign software
+- Intrusion Detection: Develop a machine learning model that can detect network intrusions in real-time. The model should be able to classify network traffic as normal or malicious.
+- Network Traffic Analysis: Develop a machine learning model that can analyze network traffic to identify potential security threats. The model should be able to identify patterns and anomalies in the network traffic.
+- Phishing Detection: Develop a machine learning model that can detect phishing emails. The model should be able to identify emails that are likely to be phishing attempts.
 
 What type of data are we grabbing?
 Data from Malware Intrusions, Traffic, Phishing Emails
